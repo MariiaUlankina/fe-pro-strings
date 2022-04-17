@@ -5,7 +5,15 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {
-
+    let newString = string.toLowerCase();
+    for (let i = 0; i < newString.length; i++){
+        if (newString[i] == 'z' || newString[i] == 'v'){
+            newString[i] = '*'
+        }
+        return newString;
+    }
+    string = newString;
+    return string;
 };
 
 /**
