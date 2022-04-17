@@ -5,7 +5,7 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {
-    
+
 };
 
 /**
@@ -19,7 +19,8 @@ export const replaceZAndVFromString = (string) => {
  * @returns {string}
  */
 export const changeWord = (string, word, newWord) => {
-   string.replace(word,newWord);
+   string = string.replace(word,newWord);
+   return string;
 };
 
 /**
