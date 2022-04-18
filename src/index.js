@@ -8,9 +8,10 @@ export const replaceZAndVFromString = (string) => {
     let newString = string.toLowerCase();
     for (let i = 0; i < newString.length; i++){
         if (newString[i] == 'z' || newString[i] == 'v'){
-            newString = newString.replace(i,'*')
+            newString = newString.replace(i,'*');
+            return newString;
         }
-        return newString;
+        
     }
     string = newString;
     return string;
