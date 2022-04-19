@@ -5,16 +5,7 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {
-    let newString = string.toLowerCase();
-    for (let i = 0; i < newString.length; i++){
-        if (newString[i] == 'z' || newString[i] == 'v'){
-            newString = newString.replace(i,'*');
-            return newString;
-        }
-        
-    }
-    string = newString;
-    return string;
+    
 };
 
 /**
@@ -38,7 +29,9 @@ export const changeWord = (string, word, newWord) => {
  * @param {number} length
  * @returns {string}
  */
-export const truncate = (string, length) => {};
+export const truncate = (string, length) => {
+    return string.slice(0,length);
+};
 
 /**
  * Принимает строку в первом аргументе, и символ во втором
