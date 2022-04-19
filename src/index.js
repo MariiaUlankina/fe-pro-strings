@@ -44,7 +44,16 @@ export const truncate = (string, length) => {
  * @param {string} symbol
  * @returns {number}
  */
-export const quantityOfSymbols = (string, symbol) => {};
+export const quantityOfSymbols = (string, symbol) => {
+    let count = 0;
+    for (let i=0; i<string.length; i++){
+        if (string[i].toLowerCase() === symbol){
+            count ++;
+        }
+        
+    }
+    return count;
+};
 
 /**
  * Принимает строку в первом аргументе, и символ во втором
